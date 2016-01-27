@@ -43,33 +43,10 @@
     });
   };
 
-
-
   Post.fetchAll = function(callback){
-      /*** Get eTag to see if the file on the server was changed ***/
-      /*** This helps to make sure the data in local storage is up to date ***/
-    $.ajax({
-      method: 'HEAD',
-      url: '/scripts/projectData.json',
-      success: function(data, message, xhr){
-        var newETag = xhr.getResponseHeader('ETag');
-        var oldETag = localStorage.eTag;
-
-        if (oldETag == newETag) {
-          /***file wasn't modified so use cached version***/
-          Post.loadAll(JSON.parse(localStorage.sourceData));
-          callback();
-        }
-        else {
-          /***the file on the server was modified or this is the first time loading the site...requesting the entire JSON file again***/
-          localStorage.setItem('eTag', newETag);
-          $.ajax('/scripts/projectData.json').done(function(returnedObj){
-            localStorage.setItem('sourceData', JSON.stringify(returnedObj));
-            Post.loadAll(returnedObj);
-            callback();
-          });
-        }
-      }
+    $.ajax('/scripts/projectData.json').done(function(returnedObj){
+      Post.loadAll(returnedObj);
+      callback();
     });
   };
 
