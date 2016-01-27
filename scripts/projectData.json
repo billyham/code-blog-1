@@ -35,7 +35,7 @@
     "projectURL": "https://github.com/deeheber/Rock-Paper-Scissors-Chrome-Extension"
   },
   {
-    "title": " Blog",
+    "title": "Portfolio Blog",
     "publishedOn": "2016-01-19",
     "category": "Website",
     "body": "<p>You're currently looking at it!</p><p>This was built using an MVC approach along with some functional programming concepts. This blog also incorporates third party libraries including <a href=\"http://handlebarsjs.com/\" target=\"_blank\">Handlebars</a> and jQuery. AJAX calls within the jQuery fetch and load the JSON data.</p>",
