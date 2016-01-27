@@ -17,7 +17,7 @@
     "title": "Vote Tracker",
     "publishedOn": "2015-12-06",
     "category": "Tooling",
-    "body": "<p>This app allows users to vote on their preferred item, stores the vote, and then displays the totals in a graph using the <a href=\"http://canvasjs.com/\" target=\"_blank\">canvasJS</a> library.</p><p>An enhancement that I'd like to add would be drag and drop, so the user can reorder the chart items.</p><p>This was one of the first times that I've worked with a third party developed JavaScript library and it was a ton of fun.</p><p>Technologies used: HTML, CSS, JavaScript, and the canvasJS library.</p>",
+    "body": "<p>This app allows users to vote on their preferred item, stores the vote, and then displays the totals in a graph using the <a href=\"http://canvasjs.com/\" target=\"_blank\">canvasJS</a> library.</p><p>An enhancement that I'd like to add would be drag and drop, so the user can reorder the chart items.</p><p>This was one of the first times that I've worked with a third party developed JavaScript library and it was a ton of fun.</p><p>Technologies used: HTML, CSS, JavaScript, and the canvasJS library.</p><p><img src=\"images/votetracker.png\" /></p>",
     "projectURL": "http://deeheber.github.io/Vote-Tracker/"
   },
   {
