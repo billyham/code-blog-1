@@ -100,9 +100,11 @@
 
   projectView.initHomePage = function(){
     /*** Writes blog posts to the page and enables views ***/
-    Post.all.forEach(function(content){
-      $('#articles').append(content.toHtml());
+    var postHtml = Post.all.map(function(content){
+      return content.toHtml();
     });
+
+    $('#articles').append(postHtml);
 
     projectView.initStats();
     projectView.handleNavTabs();
